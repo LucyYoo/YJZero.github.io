@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="Js/todo&greeting.js"></script>
+    <script defer src="Js/clock.js"></script>
+    <script defer src="Js/quotes.js"></script>
+    <script defer src="Js/backgroundImg.js"></script>
+    <script defer src="Js/whather.js"></script>
+    <title>노마더코딩 졸업작품 - Zero</title>
+</head>
+<body>
+    <main>
+        <div class="info">
+            <h2 id="clock">00:00</h2>
+            <div class="greeting-form">
+                <form id="login-form" class="hidden">
+                    <input 
+                    required 
+                    maxlength="15"
+                    type="text" 
+                    placeholder="What is your name?" />
+                    <button>Log In</button>
+                </form>
+                <h1 id="greeting" class="hidden"></h1>
+            </div>
+            <form id="todo-form" class="hidden">
+                <input type="text" placeholder="Write a To Do and Press Enter" required/>
+            </form>
+            <ul id="todo-list" class="hidden"></ul>
+        </div>
+        <div id="quotes" class="trans">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </main>
+    <div class="bgimg">
+        <div class="img-cover"></div>
+    </div>
+</body>
+</html>
